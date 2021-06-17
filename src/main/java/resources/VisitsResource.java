@@ -2,15 +2,15 @@ package resources;
 
 
 import edu.unbosque.ProyectoFinal_backend.jpa.services.VisitService;
+import resources.pojos.VisitPOJO;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import java.util.ArrayList;
 import java.util.List;
 
 
-@Path("/vets/{username}/visits/{petId}")
+@Path("app/{username}/vets/visits/{petId}")
 public class VisitsResource {
 
 
@@ -26,6 +26,29 @@ public class VisitsResource {
 
         return Response.status(Response.Status.CREATED)
                 .entity(visit)
+                .build();
+    }
+    @GET
+    @Path("/list-by-pet")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response list(@PathParam("petId") int petId) {
+        VisitService visit = new VisitService();
+        List<VisitPOJO> list = visit.listVisitsByPet(petId);
+
+
+        return Response.status(Response.Status.OK)
+                .entity(list)
+                .build();
+    }
+    @GET
+    @Path("/list-by-vet")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listbyvet(@PathParam("username") String username) {
+        VisitService visit = new VisitService();
+        List<VisitPOJO> list = visit.listVisitsByVet(username);
+
+        return Response.status(Response.Status.CREATED)
+                .entity(list)
                 .build();
     }
 }

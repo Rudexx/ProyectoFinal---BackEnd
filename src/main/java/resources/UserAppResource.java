@@ -13,9 +13,16 @@ import javax.ws.rs.core.Response;
 public class UserAppResource {
 
 
-
+/*/
+    El post se utiliza para el tratamiento de formularios
+    Los Produces  se utulizan para declarar los tipo de medio de algun recurso, normalmente lo hace para para leer y escribir
+ */
     @POST
     @Produces(MediaType.APPLICATION_JSON)
+    /*/
+    El responsede la feFetch API representa la respuesta a una peticion
+    Los QueryPara, se utilizan para complementar las busquedas y los PatchParam para establecer el contexto de la busqueda
+     */
     public Response create(@QueryParam("username") String username
             , @QueryParam("password") String password ,
             @QueryParam("email") String email,

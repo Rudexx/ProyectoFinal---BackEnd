@@ -6,6 +6,7 @@ import edu.unbosque.ProyectoFinal_backend.jpa.entities.Vet;
 import edu.unbosque.ProyectoFinal_backend.jpa.entities.Visit;
 
 import javax.persistence.EntityManager;
+import java.util.List;
 import java.util.Optional;
 
 public class VisitRepositoryImpl implements VisitRepository {
@@ -23,7 +24,10 @@ public class VisitRepositoryImpl implements VisitRepository {
             Pet pet = entityManager.find(Pet.class, petid);
             Vet vet = entityManager.find(Vet.class, username);
 
-
+            pet.addVisit(visit);
+            vet.addVisit(visit);
+            visit.setPet(pet);
+            visit.setVet(vet);
 
             entityManager.persist(visit);
             entityManager.getTransaction().commit();
@@ -33,4 +37,21 @@ public class VisitRepositoryImpl implements VisitRepository {
         }
         return Optional.empty();
     }
+
+    @Override
+    public List<Visit> findbyVeterinary(String username) {
+        return entityManager.createQuery(
+                "SELECT c FROM Visit c WHERE c.vet.user.username LIKE :username")
+                .setParameter("username", username)
+                .getResultList();
+    }
+
+    @Override
+    public List<Visit> findbyPet(int petid) {
+        return entityManager.createQuery(
+                "SELECT c FROM Visit c WHERE c.pet.pet_id =" + petid)
+                .getResultList();
+    }
+
+
 }

@@ -19,21 +19,27 @@ import java.util.Optional;
 public class UserAppService {
 
     UserAppRepository userAppRepository;
-
+/*/
+ Bean Validation es establecer un estándar para la definición e implementación de restricciones en clases Java del tipo “el atributo nombre no puede ser nulo
+ */
     public Optional<String> validateUser( String username, String password ) {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tutorial");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        // Getting credentials from the database
+        /*/
+         Obteniendo credenciales de la base de datos
+         */
         userAppRepository = new UserAppRepositoryImpl(entityManager);
         Optional<UserApp> user = userAppRepository.findByUsername(username);
 
         entityManager.close();
         entityManagerFactory.close();
 
-        // Validating if credentials provided by the user are valid
-        // If success, return the user role
+        /*/
+        Validar si las credenciales proporcionadas por el usuario son válidas
+        Si tiene éxito, devuelva el rol de usuario
+         */
         if (user.isPresent()) {
             if (user.get().getUsername().equals(username) && user.get().getPassword().equals(password)) {
                 return Optional.of(user.get().getRole());
@@ -49,7 +55,9 @@ public class UserAppService {
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tutorial");
         EntityManager entityManager = entityManagerFactory.createEntityManager();
 
-        // Getting credentials from the database
+        /*/
+        Obteniendo credenciales de la base de datos
+         */
         userAppRepository = new UserAppRepositoryImpl(entityManager);
         Optional<UserApp> user = userAppRepository.findByUsername(username);
 
@@ -57,8 +65,11 @@ public class UserAppService {
         entityManager.close();
         entityManagerFactory.close();
 
-        // Validating if credentials provided by the user are valid
-        // If success, return the user role
+        /*/
+         Validar si las credenciales proporcionadas por el usuario son válidas
+         Si tiene éxito, devuelva el rol de usuario
+         */
+
         if (user.isPresent()) {
             return "present";
         }else {
@@ -84,7 +95,9 @@ public class UserAppService {
 
 
     }
-
+        /*/
+        Un Optional es una clase que puede o no contener un valor, es decir, que se comporta como un wrapper para cualquier tipo de objeto que pueda o no ser nulo
+         */
     public Optional<UserAppPOJO> create( String username, String password, String email,String role  ) {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tutorial");
