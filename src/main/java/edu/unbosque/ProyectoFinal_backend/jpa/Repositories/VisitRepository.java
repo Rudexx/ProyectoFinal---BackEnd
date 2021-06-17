@@ -9,5 +9,5 @@ import java.util.Optional;
 
 public interface VisitRepository {
 
-    Optional<Visit> save(Visit visit);
+    Optional<Visit> save(Visit visit, String username, Integer petid);
 }

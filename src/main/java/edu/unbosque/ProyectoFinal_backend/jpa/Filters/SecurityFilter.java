@@ -14,8 +14,8 @@ import java.util.List;
 import java.util.Optional;
 import java.util.StringTokenizer;
 
-@Provider
-@Logged
+//@Provider
+//@Logged
 //@PreMatching
 public class SecurityFilter implements ContainerRequestFilter {
 
