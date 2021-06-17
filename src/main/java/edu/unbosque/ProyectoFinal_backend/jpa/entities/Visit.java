@@ -16,6 +16,7 @@ public class Visit {
     Vet vet;
 
     @Id
+    @GeneratedValue
     @Column(name="visit_id")
     int visi_id;
     @Column(name="create_at")
@@ -31,8 +32,8 @@ public class Visit {
 
 
 
-    public Visit(int visi_id, String create_at, String type, String description) {
-        this.visi_id = visi_id;
+    public Visit(String create_at, String type, String description) {
+
         this.create_at = create_at;
         this.type = type;
         this.description = description;

@@ -14,6 +14,9 @@ public class VisitPOJO {
         description = descripcion;
     }
 
+    public VisitPOJO() {
+    }
+
     public String getCreated_at() {
         return created_at;
     }
