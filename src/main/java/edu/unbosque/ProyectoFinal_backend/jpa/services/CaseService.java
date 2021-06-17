@@ -20,6 +20,15 @@ public class CaseService {
 
     PetCaseRepository caseRepository;
 
+    /**
+     * Este es el metodo que enviara los datos a el PetCaseRepositoryImpl
+     * @param username debe ser el nombredeusuario que tiene la persona que registra el caso
+     * @param petId Es la ID de la mascota sobre la que se este montando el caso
+     * @param created_at Es la fecha de creacion del caso
+     * @param type Es el tipo de caso que se quiere registrar pudiendo ser robo, esterilizacion, etc
+     * @param description Es la descricpcion especifica del caso, especificando detalles
+     * @return Se devuelve un Optional pudiendo ser vacio si el caso no se creo o contener algo si el caso se creo
+     */
     public Optional<PetCasePOJO> createCase(String username, Integer petId, String created_at, String type, String description) {
 
         EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("tutorial");
