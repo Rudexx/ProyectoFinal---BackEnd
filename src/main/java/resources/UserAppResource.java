@@ -14,8 +14,8 @@ public class UserAppResource {
 
 
 
-    @PUT
-    @Produces(MediaType.TEXT_PLAIN)
+    @POST
+    @Produces(MediaType.APPLICATION_JSON)
     public Response create(@QueryParam("username") String username
             , @QueryParam("password") String password ,
             @QueryParam("email") String email,
