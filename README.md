@@ -5,6 +5,7 @@ Retos que suponia la creacion del BackEnd en este proyecto:
 - Cordinacion de los miembros para el funcionamiento del programa
 - Enlace del programa con la base de datos
 - Hacer los recursos de rest
+
 Oportunidades:
 - Gracias a este proyecto pudimos afinar bastante mas la comprension de bases de datos y su enlace con un programa
 - Aprendimos a solucionar un problema de diferentes medios para poder llegar al resultado final
