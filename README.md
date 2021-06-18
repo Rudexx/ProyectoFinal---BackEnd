@@ -3,6 +3,9 @@ Integrantes: David Jose Nogales Leon - Daniel Alvarez Ramirez - Carlos Carrillo
 
 Link del FrontEnd: https://github.com/Rudexx/HouseWeb-Software---FrontEnd
 
+
+Publicación GitHub Pages:  https://rudexx.github.io/HouseWeb-Software---FrontEnd/index.html 
+
 # Por favor, ejecutar el programa LOCALMENTE gracias :3
 
 Retos que suponia la creacion del BackEnd en este proyecto:
