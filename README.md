@@ -22,3 +22,9 @@ Stack Tecnologico Utilizado:
 - PostgreSQL 10
 - PostgreSQL JDBC Driver 42.2.10
 - JDK 1.8
+
+
+
+
+
+Video de Youtube: https://youtu.be/HNMQ6Cc3xr4
