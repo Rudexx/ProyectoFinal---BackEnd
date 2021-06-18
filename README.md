@@ -12,3 +12,5 @@ Oportunidades:
 - Aprendimos a solucionar un problema de diferentes medios para poder llegar al resultado final
 - Con incentivo de este proyecto aprendimos a dividir el tiempo para que no se acumulara
 - Aprendimos a trabajar en una misma rama, informando a los demas compañeros sobre que clases se tocan para que otros no la modifiquen
+
+Stack Tecnologico Utilizado: Wild Fly
