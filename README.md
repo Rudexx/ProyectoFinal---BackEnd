@@ -13,4 +13,8 @@ Oportunidades:
 - Con incentivo de este proyecto aprendimos a dividir el tiempo para que no se acumulara
 - Aprendimos a trabajar en una misma rama, informando a los demas compañeros sobre que clases se tocan para que otros no la modifiquen
 
-Stack Tecnologico Utilizado: Wild Fly
+Stack Tecnologico Utilizado:
+- Wildfly 23.0.2.Final
+- PostgreSQL 10
+- PostgreSQL JDBC Driver 42.2.10
+- JDK 1.8
