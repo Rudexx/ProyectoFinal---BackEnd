@@ -1,0 +1,654 @@
+{
+	"info": {
+		"_postman_id": "c0b38996-fb7d-450e-9d1c-79f4ea6e2967",
+		"name": "Final Project Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List pets by owner",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/theecarus/owners/pets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"theecarus",
+						"owners",
+						"pets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Pet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/theecarus/owners/pets/?microchip=3214 - ADKL&name=Venus&race=Cookier_Spanish&specie=Canino&size=mediano&sex=hembra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"theecarus",
+						"owners",
+						"pets",
+						""
+					],
+					"query": [
+						{
+							"key": "microchip",
+							"value": "3214 - ADKL"
+						},
+						{
+							"key": "name",
+							"value": "Venus"
+						},
+						{
+							"key": "race",
+							"value": "Cookier_Spanish"
+						},
+						{
+							"key": "specie",
+							"value": "Canino"
+						},
+						{
+							"key": "size",
+							"value": "mediano"
+						},
+						{
+							"key": "sex",
+							"value": "hembra"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Pet Case",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/theecarus/owners/pets/?microchip=3214 - ADKL&name=Venus&race=Cookier_Spanish&specie=Canino&size=mediano&sex=hembra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"theecarus",
+						"owners",
+						"pets",
+						""
+					],
+					"query": [
+						{
+							"key": "microchip",
+							"value": "3214 - ADKL"
+						},
+						{
+							"key": "name",
+							"value": "Venus"
+						},
+						{
+							"key": "race",
+							"value": "Cookier_Spanish"
+						},
+						{
+							"key": "specie",
+							"value": "Canino"
+						},
+						{
+							"key": "size",
+							"value": "mediano"
+						},
+						{
+							"key": "sex",
+							"value": "hembra"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Pet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/theecarus/owners/pets/?microchip=3214 - ADKL&name=Venus&race=Cookier_Spanish&specie=Canino&size=mediano&sex=hembra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"theecarus",
+						"owners",
+						"pets",
+						""
+					],
+					"query": [
+						{
+							"key": "microchip",
+							"value": "3214 - ADKL"
+						},
+						{
+							"key": "name",
+							"value": "Venus"
+						},
+						{
+							"key": "race",
+							"value": "Cookier_Spanish"
+						},
+						{
+							"key": "specie",
+							"value": "Canino"
+						},
+						{
+							"key": "size",
+							"value": "mediano"
+						},
+						{
+							"key": "sex",
+							"value": "hembra"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Pet Case Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/theecarus/owners/pets/?microchip=3214 - ADKL&name=Venus&race=Cookier_Spanish&specie=Canino&size=mediano&sex=hembra",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"theecarus",
+						"owners",
+						"pets",
+						""
+					],
+					"query": [
+						{
+							"key": "microchip",
+							"value": "3214 - ADKL"
+						},
+						{
+							"key": "name",
+							"value": "Venus"
+						},
+						{
+							"key": "race",
+							"value": "Cookier_Spanish"
+						},
+						{
+							"key": "specie",
+							"value": "Canino"
+						},
+						{
+							"key": "size",
+							"value": "mediano"
+						},
+						{
+							"key": "sex",
+							"value": "hembra"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Vet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app?username=VeterinarioCualquiera&password=741&address=Colombia&neighbourhood=Cucuta&role=vet&name=Gabriel&email=vet1@gmail.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "VeterinarioCualquiera"
+						},
+						{
+							"key": "password",
+							"value": "741"
+						},
+						{
+							"key": "address",
+							"value": "Colombia"
+						},
+						{
+							"key": "neighbourhood",
+							"value": "Cucuta"
+						},
+						{
+							"key": "role",
+							"value": "vet"
+						},
+						{
+							"key": "name",
+							"value": "Gabriel"
+						},
+						{
+							"key": "email",
+							"value": "vet1@gmail.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Visit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/VeterinarioCualquiera/vets/visits/131?created_at=mañana&type=vacunacion&description=segunda vacunacion",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"VeterinarioCualquiera",
+						"vets",
+						"visits",
+						"131"
+					],
+					"query": [
+						{
+							"key": "created_at",
+							"value": "mañana"
+						},
+						{
+							"key": "type",
+							"value": "vacunacion"
+						},
+						{
+							"key": "description",
+							"value": "segunda vacunacion"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List visits by pet",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/VeterinarioCualquiera/vets/visits/131/list-by-pet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"VeterinarioCualquiera",
+						"vets",
+						"visits",
+						"131",
+						"list-by-pet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List visits by Veterinary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/VeterinarioCualquiera/vets/visits/131/list-by-vet",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"VeterinarioCualquiera",
+						"vets",
+						"visits",
+						"131",
+						"list-by-vet"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Vet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/Helloo/vets?address=Venezuela&neighbourhood=Caracas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"Helloo",
+						"vets"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "Helloo",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "741",
+							"disabled": true
+						},
+						{
+							"key": "address",
+							"value": "Venezuela"
+						},
+						{
+							"key": "neighbourhood",
+							"value": "Caracas"
+						},
+						{
+							"key": "role",
+							"value": "vet",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "Gabriel",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "vet1@gmail.com",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Official",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app?username=RedEcarus&password=123jbkbm13&address=Polonia&neighbourhood=deschi&role=owner&name=Oliver",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "RedEcarus"
+						},
+						{
+							"key": "password",
+							"value": "123jbkbm13"
+						},
+						{
+							"key": "address",
+							"value": "Polonia"
+						},
+						{
+							"key": "neighbourhood",
+							"value": "deschi"
+						},
+						{
+							"key": "role",
+							"value": "owner"
+						},
+						{
+							"key": "name",
+							"value": "Oliver"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Owners by Neighbourhood",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/theecarus/list-owners",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"theecarus",
+						"list-owners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Owner",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app?username=RedEcarus&password=123jbkbm13&address=Polonia&neighbourhood=deschi&role=owner&name=Oliver",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "RedEcarus"
+						},
+						{
+							"key": "password",
+							"value": "123jbkbm13"
+						},
+						{
+							"key": "address",
+							"value": "Polonia"
+						},
+						{
+							"key": "neighbourhood",
+							"value": "deschi"
+						},
+						{
+							"key": "role",
+							"value": "owner"
+						},
+						{
+							"key": "name",
+							"value": "Oliver"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validate user",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "741",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "VeterinarioCualquiera",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "role",
+						"value": "official",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app/VeterinarioCualquiera",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app",
+						"VeterinarioCualquiera"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Owner",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ProyectoFinal-backend-1.0-SNAPSHOT/api/app?username=RedEcarus&password=123jbkbm13&address=Polonia&neighbourhood=deschi&role=owner&name=Oliver",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ProyectoFinal-backend-1.0-SNAPSHOT",
+						"api",
+						"app"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "RedEcarus"
+						},
+						{
+							"key": "password",
+							"value": "123jbkbm13"
+						},
+						{
+							"key": "address",
+							"value": "Polonia"
+						},
+						{
+							"key": "neighbourhood",
+							"value": "deschi"
+						},
+						{
+							"key": "role",
+							"value": "owner"
+						},
+						{
+							"key": "name",
+							"value": "Oliver"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Show pets",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
